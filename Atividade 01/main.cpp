@@ -5,18 +5,12 @@
 using namespace std;
 
 int main() {
-    vector <Disciplina*> Disciplinas;
-    Disciplinas.push_back(new Disciplina(155, "LOO")); 
-    Disciplinas.push_back(new Disciplina(156, "PE1")); 
-    Disciplinas.push_back(new Disciplina(157, "PE2")); 
+    vector <Matriculas*> Disciplinas;
+    Disciplinas.push_back(new Matriculas(155, "POO", 40)); 
+    Disciplinas.push_back(new Matriculas(156, "Cálculo", 15)); 
+    Disciplinas.push_back(new Matriculas(157, "Estrutura de dados", 23)); 
 
-    Exibe(Disciplinas, "Disciplinas da matricula");
+    Exibe(Disciplinas, "Matrículas por Disciplina:");
 
-    // vector <int*> inteiros;
-    // inteiros.push_back(new int(155 )); 
-    // inteiros.push_back(new int(643 )); 
-    
-    // Exibe(inteiros, "Inteiros");
-    
     return 0;
 }
